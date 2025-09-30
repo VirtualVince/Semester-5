@@ -13,8 +13,8 @@ app.get("/hello", (req, res) => {
 
 // GET /user?firstname=&lastname=
 app.get("/user", (req, res) => {
-    const firstname = req.query.firstname || "Pritesh";
-    const lastname = req.query.lastname || "Patel";
+    const firstname = req.query.firstname || "Vincente";
+    const lastname = req.query.lastname || "Sequeira";
     res.json({ firstname, lastname });
 });
 
