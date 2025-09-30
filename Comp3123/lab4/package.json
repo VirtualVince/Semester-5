@@ -1,0 +1,14 @@
+{
+    "name": "StudentID_COMP3123-exec04",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "dependencies": {
+        "express": "^4.19.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.0"
+    }
+}
