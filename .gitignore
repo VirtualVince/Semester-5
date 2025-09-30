@@ -1,0 +1,18 @@
+# OS
+*.zip
+*.log
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+local.properties
+
+# Android
+*.apk
+*.ap_
+captures/
+output.json
