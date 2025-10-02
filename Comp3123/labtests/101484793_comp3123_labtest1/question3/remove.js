@@ -12,7 +12,7 @@ if (fs.existsSync(logsDir)) {
     });
 
     fs.rmdirSync(logsDir);
-    console.log("Logs directory removed.");
+    console.log("Logs directory eviscerated.");
 } else {
     console.log("No Logs directory found.");
 }
