@@ -18,7 +18,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question("Enter a list of items separated by commas: ", (answer) => {
+rl.question("Enter words separating each with commas: ", (answer) => {
     const mixedArray = answer.split(",").map(item => {
         item = item.trim();
         if (!isNaN(item)) return Number(item);
