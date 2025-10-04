@@ -1,0 +1,64 @@
+# --------------------------------------------------
+# Commands to run this compose file:
+#     - docker-compose -p microservices-comp3095-integrated -f docker-compose.yml up -d
+#     This command will start the containers in detached mode (-d) without rebuilding the images (if they already exist)
+#
+#     - docker-compose -p microservices-comp3095-integrated -f docker-compose.yml up -d --build
+#     This command force the rebuild of images, even if the images already exist
+# ------------------------------------------------
+services:
+
+  product-service:
+    image: product-service
+    ports:
+      - "8084:8084"
+    build:
+      context: ./product-service
+      dockerfile: ./Dockerfile
+    container_name: product-service
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - mongodb
+    networks:
+      - spring
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - ./docker/integrated/mongo/data/products:/data/db
+      - ./docker/integrated/mongo/init/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+    command: mongod --auth
+    networks:
+      - spring
+
+  mongo-express:
+    image: mongo-express
+    ports:
+      - "8081:8081"
+    container_name: mongo-express
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+      - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
+    depends_on:
+      - mongodb
+    networks:
+      - spring
+
+
+# Optional volumes section for persisting data
+volumes:
+  mongo-db:
+    driver: local  # Use local driver from persisting data on the host machine
+
+networks:
+  spring:
+      driver: bridge   #Bridge network allows isolated communication between containers
