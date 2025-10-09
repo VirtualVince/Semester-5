@@ -13,6 +13,7 @@
         android:theme="@style/Theme.A1_Vincente_Sequeira">
         <activity
             android:name=".DetailActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
