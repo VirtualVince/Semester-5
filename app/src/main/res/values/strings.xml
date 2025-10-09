@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">A1_Vincente_Sequeira</string>
+    <string name="tax_0_00">Tax: $0.00</string>
+    <string name="total_pay_0_00">Total Pay: $0.00</string>
+    <string name="overtime_pay_0_00">Overtime Pay: $0.00</string>
+    <string name="pay_0_00">Pay: $0.00</string>
+    <string name="results">Results:</string>
+    <string name="calculate_payment">Calculate Payment</string>
+    <string name="hourly_rate">Hourly Rate</string>
+    <string name="number_of_hours_worked">Number of Hours Worked</string>
+    <string name="payment_calculator">Payment Calculator</string>
+</resources>
