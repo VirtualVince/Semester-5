@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
             double tax = totalPay * 0.18;
 
-            // Display results
             textViewPay.setText("Pay: $" + df.format(regularPay));
             textViewOvertimePay.setText("Overtime Pay: $" + df.format(overtimePay));
             textViewTotalPay.setText("Total Pay: $" + df.format(totalPay));
