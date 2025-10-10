@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            // Calculate pay based on hours worked
             double regularPay;
             double overtimePay = 0;
             double totalPay;
