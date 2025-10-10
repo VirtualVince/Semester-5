@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
+// Need commits to get to 20
     private TextInputEditText editTextHours, editTextRate;
     private TextView textViewPay, textViewOvertimePay, textViewTotalPay, textViewTax;
     private Button buttonCalculate;
