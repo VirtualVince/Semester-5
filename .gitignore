@@ -2,6 +2,9 @@
 *.zip
 *.log
 
+# I hate Jupyter
+[Cc]omp3122/
+
 # IntelliJ / Android Studio
 .idea/
 *.iml
