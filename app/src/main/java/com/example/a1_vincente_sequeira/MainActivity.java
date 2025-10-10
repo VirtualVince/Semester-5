@@ -93,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menu_detail) {
-            // Navigate to DetailActivity
             startActivity(new android.content.Intent(this, DetailActivity.class));
             return true;
         }
