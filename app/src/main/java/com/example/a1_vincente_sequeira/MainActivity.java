@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
             textViewTotalPay.setText("Total Pay: $" + df.format(totalPay));
             textViewTax.setText("Tax: $" + df.format(tax));
 
-            // Add to payment list for DetailActivity
             String paymentEntry = "Hours: " + hours + " | Rate: $" + rate +
                     " | Total: $" + df.format(totalPay);
             paymentList.add(paymentEntry);
