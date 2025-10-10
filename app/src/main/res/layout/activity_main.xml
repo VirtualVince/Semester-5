@@ -10,10 +10,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:text="@string/payment_calculator"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp"/>
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:id="@+id/editTextHours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -38,53 +38,53 @@
             android:id="@+id/editTextRate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/buttonCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calculate_payment"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:text="@string/calculate_payment" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="@string/results"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewPay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="@string/pay_0_00"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textViewOvertimePay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="@string/overtime_pay_0_00"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textViewTotalPay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="@string/total_pay_0_00"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textViewTax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tax_0_00"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
 </LinearLayout>

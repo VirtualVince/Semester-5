@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewPay, textViewOvertimePay, textViewTotalPay, textViewTax;
     private Button buttonCalculate;
     private DecimalFormat df = new DecimalFormat("#.##");
-
-    // Static list to store payment data for DetailActivity
     public static ArrayList<String> paymentList = new ArrayList<>();
 
     @Override
@@ -26,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize views
         editTextHours = findViewById(R.id.editTextHours);
         editTextRate = findViewById(R.id.editTextRate);
         textViewPay = findViewById(R.id.textViewPay);
@@ -35,12 +32,10 @@ public class MainActivity extends AppCompatActivity {
         textViewTax = findViewById(R.id.textViewTax);
         buttonCalculate = findViewById(R.id.buttonCalculate);
 
-        // Set button click listener
         buttonCalculate.setOnClickListener(v -> calculatePayment());
     }
 
     private void calculatePayment() {
-        // Get input values
         String hoursStr = editTextHours.getText().toString().trim();
         String rateStr = editTextRate.getText().toString().trim();
 
