@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 totalPay = regularPay + overtimePay;
             }
 
-            // Calculate tax
             double tax = totalPay * 0.18;
 
             // Display results
