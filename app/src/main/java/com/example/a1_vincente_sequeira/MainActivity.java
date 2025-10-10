@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             double hours = Double.parseDouble(hoursStr);
             double rate = Double.parseDouble(rateStr);
 
-            // Validate positive numbers
             if (hours < 0 || rate < 0) {
                 Toast.makeText(this, "Error: Values must be positive", Toast.LENGTH_SHORT).show();
                 return;
