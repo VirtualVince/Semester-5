@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
                     " | Total: $" + df.format(totalPay);
             paymentList.add(paymentEntry);
 
-            // Show success message
             Toast.makeText(this, "Success: Payment calculated!", Toast.LENGTH_SHORT).show();
 
         } catch (NumberFormatException e) {
