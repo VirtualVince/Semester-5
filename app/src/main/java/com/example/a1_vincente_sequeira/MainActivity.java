@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         String hoursStr = editTextHours.getText().toString().trim();
         String rateStr = editTextRate.getText().toString().trim();
 
-        // Validate input
         if (hoursStr.isEmpty() || rateStr.isEmpty()) {
             Toast.makeText(this, "Error: Please fill in all fields", Toast.LENGTH_SHORT).show();
             return;
