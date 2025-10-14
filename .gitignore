@@ -3,7 +3,7 @@
 *.log
 
 # I hate Jupyter
-[Cc]omp3122/labs/
+[Cc]omp3122
 
 # IntelliJ / Android Studio
 .idea/
