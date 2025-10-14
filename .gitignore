@@ -1,4 +1,4 @@
-# OS
+ignore# OS
 *.zip
 *.log
 
@@ -19,3 +19,8 @@ local.properties
 *.ap_
 captures/
 output.json
+
+# Node.js
+node_modules/
+.env
+package-lock.json
