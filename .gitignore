@@ -18,6 +18,9 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 
+# IDEs folder
+IDE's/
+
 # IntelliJ / Android Studio
 .idea/
 *.iml
