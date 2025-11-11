@@ -35,3 +35,6 @@ local.properties
 *.ap_
 captures/
 output.json
+
+#Lab Demos
+LabDemo
