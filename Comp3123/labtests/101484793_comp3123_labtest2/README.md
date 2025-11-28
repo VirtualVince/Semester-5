@@ -1,7 +1,7 @@
 # Weather App - COMP3123 Lab Test 2
 
 - **Student ID**: 101484793
-- **Name**: [Vincente Sequeira
+- **Name**: Vincente Sequeira
 - **Course**: COMP3123 - Full Stack Development I
 - **Date**: November 27, 2025
 
@@ -72,4 +72,4 @@ npm start
 Uses provided `weather_api_output.json` as base data. Additional cities created with same JSON structure for demo purposes.
 
 ## GitHub Repository
-[https://github.com/[username]/101484793_comp3123_labtest2](https://github.com/[username]/101484793_comp3123_labtest2)
+https://github.com/VirtualVince/Semester-5/tree/main/Comp3123/labtests/101484793_comp3123_labtest2
